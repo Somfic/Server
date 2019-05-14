@@ -267,3 +267,11 @@ Reason: §0Banned by an operator.
 [22:58:47] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
 [22:58:47] [Server thread/INFO]: Saving chunks for level 'world_nether'/minecraft:the_nether
 [22:58:48] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:58:49] [Server thread/INFO]: Saving chunks for level 'world_the_end'/minecraft:the_end
+[22:58:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:58:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:58:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[22:58:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:58:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[22:58:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[22:58:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
