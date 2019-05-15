@@ -15,13 +15,12 @@ settings:
   debug: false
   save-user-cache-on-stop-only: false
   late-bind: false
-  netty-threads: 4
   bungeecord: false
   sample-count: 12
+  player-shuffle: 0
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
-  player-shuffle: 0
   user-cache-size: 1000
   attribute:
     maxHealth:
@@ -30,8 +29,9 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  moved-wrongly-threshold: 0.0625
+  netty-threads: 4
   moved-too-quickly-multiplier: 10.0
+  moved-wrongly-threshold: 0.0625
 messages:
   whitelist: You are not whitelisted on this server!
   unknown-command: Unknown command. Type "/help" for help.
@@ -43,9 +43,6 @@ stats:
   disable-saving: false
   forced-stats: {}
 commands:
-  spam-exclusions:
-  - /skill
-  log: true
   replace-commands:
   - setblock
   - summon
@@ -53,6 +50,9 @@ commands:
   - tellraw
   tab-complete: 0
   send-namespaced: true
+  spam-exclusions:
+  - /skill
+  log: true
   silent-commandblock-console: false
 advancements:
   disable-saving: false
@@ -61,24 +61,17 @@ advancements:
 world-settings:
   default:
     verbose: true
-    zombie-aggressive-towards-villager: true
+    arrow-despawn-rate: 1200
     view-distance: 10
-    enable-zombie-pigmen-portal-spawns: true
-    wither-spawn-sound-radius: 0
+    item-despawn-rate: 6000
     merge-radius:
       item: 2.5
       exp: 3.0
-    item-despawn-rate: 6000
-    arrow-despawn-rate: 1200
-    hanging-tick-frequency: 100
     nerf-spawner-mobs: false
-    random-light-updates: false
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
-      tick-inactive-villagers: true
-    mob-spawn-range: 6
+    wither-spawn-sound-radius: 0
+    enable-zombie-pigmen-portal-spawns: true
+    hanging-tick-frequency: 100
+    zombie-aggressive-towards-villager: true
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -93,6 +86,13 @@ world-settings:
       netherwart-modifier: 100
       vine-modifier: 100
       cocoa-modifier: 100
+    mob-spawn-range: 6
+    max-tnt-per-tick: 100
+    squid-spawn-range:
+      min: 45.0
+    max-tick-time:
+      tile: 50
+      entity: 50
     entity-tracking-range:
       players: 48
       animals: 48
@@ -103,12 +103,12 @@ world-settings:
       hopper-transfer: 8
       hopper-check: 1
     hopper-amount: 1
-    squid-spawn-range:
-      min: 45.0
-    max-tnt-per-tick: 100
-    max-tick-time:
-      tile: 50
-      entity: 50
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
+      tick-inactive-villagers: true
+    random-light-updates: false
     hunger:
       jump-walk-exhaustion: 0.05
       jump-sprint-exhaustion: 0.2
