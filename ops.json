@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "uuid": "e2188c1f-e097-4c17-bbb8-34c33844463d",
+    "name": "Somfic",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]
